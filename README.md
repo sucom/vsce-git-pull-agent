@@ -1,4 +1,4 @@
-# Git Pull Agent
+# Git Pull Agent (VS Code Family Extension)
 
 <p align="center">
   <img src="images/icon-sm.png" alt="Git Pull Agent logo" width="120"/>
@@ -17,7 +17,7 @@ When following along with a live coding session, a bootcamp, or a workshop, you 
 
 ## 🚀 Installation
 
-- Install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-pull-agent)
+- Install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-pull-agent) | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-pull-agent)
 - Command Line: `code --install-extension spajs.git-pull-agent`
 
 OR
@@ -29,11 +29,37 @@ OR
 
 > #### The Perfect Companion for Instructors:
 > Are you an instructor or workshop host?
-> Use [Git Snapshots](https://marketplace.visualstudio.com/items?itemName=spajs.git-snapshots)
+> Use Git Snapshots - [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-snapshots) | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-snapshots)
 > to easily broadcast your code to the remote repository, while your students use
 > **Git Pull Agent** to seamlessly receive it.
 
-## ✨ Features
+## ✨ Other Related Extensions
+
+- Git SSH Config Manager -
+  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-ssh-config-manager)
+  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-ssh-config-manager)
+
+- Git Snapshots -
+  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-snapshots)
+  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-snapshots)
+
+- Backup File -
+  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.backup-file)
+  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/backup-file)
+
+- Tagged File Snapshots -
+  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.tagged-file-snapshots)
+  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/tagged-file-snapshots)
+
+- Tagged Snapshots -
+  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=SPAjs.tagged-snapshots)
+  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/tagged-snapshots)
+
+- Backup Folder -
+  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.backup-folder)
+  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/backup-folder)
+
+## ✨ Git Pull Agent Features
 
 Git Pull Agent keeps things incredibly simple. It does one thing and does it perfectly: keeps your local repo in sync with the remote.
 
