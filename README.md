@@ -33,7 +33,21 @@ OR
 > to easily broadcast your code to the remote repository, while your students use
 > **Git Pull Agent** to seamlessly receive it.
 
-## ✨ Other Related Extensions
+
+## 🌐 Prefer the Browser? Try Git Live File Viewer
+
+Don't want to clone an entire repository just to keep an eye on a single file? If you are following a webinar, a quick demo, or simply want to monitor a specific file without opening your editor, check out our companion browser extension.
+
+**[Git Live File Viewer](https://chromewebstore.google.com/detail/git-live-file-viewer/ephkeppnaefbilkdegkihomgmellehkl)** is a lightweight Chrome extension that transforms any standard GitHub file page into a real-time, auto-updating presentation monitor.
+
+**Why use the Chrome Extension?**
+- **Zero Local Setup:** No cloning, no terminal, and no VS Code / IDE workspace required. Just open the GitHub URL.
+- **Laser Focus:** Perfect for tracking a single, rapidly changing file (Live Coding Demo) in a secondary monitor.
+- **Presenter-Ready UI:** Instantly expands into a sleek, dark-themed, full-screen overlay with syntax highlighting and a 1-click copy button.
+
+👉 **[Download Git Live File Viewer from the Chrome Web Store](https://chromewebstore.google.com/detail/git-live-file-viewer/ephkeppnaefbilkdegkihomgmellehkl)**
+
+## ✨ Other Related VS Code Family Extensions
 
 - Git SSH Config Manager -
   [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-ssh-config-manager)
