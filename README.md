@@ -1,6 +1,6 @@
 # Git Pull Agent (VS Code Family Extension)
 
-<p align="center">
+<p>
   <img src="images/icon-sm.png" alt="Git Pull Agent logo" width="120"/>
 </p>
 
@@ -10,22 +10,22 @@ When following along with a live coding session, a bootcamp, or a workshop, you 
 
 ## ⚡ Quick Start
 
-1. **Install** Git Pull Agent from the VS Code Marketplace.
+1. **Install** Git Pull Agent from IDE's Extensions Panel.
 2. **Clone** your instructor's or project's Git repository.
-3. **Click** the `auto-pull: OFF` status bar button to toggle it `ON`.
+3. **Click** the `auto-pull: OFF` status bar button to open the quick settings menu and select a polling interval (e.g., 5 seconds).
 4. Watch your files update in real-time as the instructor pushes new code!
 
 ## 🚀 Installation
 
-- Install from [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-pull-agent) | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-pull-agent)
-- Command Line: `code --install-extension spajs.git-pull-agent`
-
-OR
-
-1. Open VS Code
+1. Open Your IDE: VS Code / Antigravity / Cursor / Windsurf / VSCodium
 2. Go to Extensions
 3. Search for `git pull agent` and select this extension
 4. Click **Install**
+
+OR
+
+- Install from [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-pull-agent) | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-pull-agent)
+
 
 > #### The Perfect Companion for Instructors:
 > Are you an instructor or workshop host?
@@ -49,75 +49,70 @@ Don't want to clone an entire repository just to keep an eye on a single file? I
 
 ## ✨ Other Related VS Code Family Extensions
 
-- Git SSH Config Manager -
-  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-ssh-config-manager)
-  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-ssh-config-manager)
-
 - Git Snapshots -
-  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-snapshots)
-  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-snapshots)
+  [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-snapshots)
+  | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-snapshots)
+
+- Git SSH Config Manager -
+  [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-ssh-config-manager)
+  | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-ssh-config-manager)
+
+- Git Profile-Protocol Switcher -
+  [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-profile-protocol-switcher)
+  | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-profile-protocol-switcher)
+
+- Git Repo Manager -
+  [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-repo-manager)
+  | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-repo-manager)
+
+- Git Open Remote Repo/Files in Browser -
+  [Open VSX Registry](https://open-vsx.org/extension/SPAjs/git-open-remote-repo-file-in-browser)
+  | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.git-open-remote-repo-file-in-browser)
 
 - Backup File -
-  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.backup-file)
-  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/backup-file)
+  [Open VSX Registry](https://open-vsx.org/extension/SPAjs/backup-file)
+  | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.backup-file)
 
 - Tagged File Snapshots -
-  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.tagged-file-snapshots)
-  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/tagged-file-snapshots)
+  [Open VSX Registry](https://open-vsx.org/extension/SPAjs/tagged-file-snapshots)
+  | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.tagged-file-snapshots)
 
 - Tagged Snapshots -
-  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=SPAjs.tagged-snapshots)
-  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/tagged-snapshots)
+  [Open VSX Registry](https://open-vsx.org/extension/SPAjs/tagged-snapshots)
+  | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=SPAjs.tagged-snapshots)
 
 - Backup Folder -
-  [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.backup-folder)
-  | [Open VSX Registry](https://open-vsx.org/extension/SPAjs/backup-folder)
+  [Open VSX Registry](https://open-vsx.org/extension/SPAjs/backup-folder)
+  | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=spajs.backup-folder)
 
 ## ✨ Git Pull Agent Features
 
 Git Pull Agent keeps things incredibly simple. It does one thing and does it perfectly: keeps your local repo in sync with the remote.
 
-- *Auto-Pull Interval* | *use status bar icon `auto-pull: ON`*
-  Continuously polls the remote repository and pulls down new code automatically.
+- **Interactive Settings Menu:** Click the `auto-pull` status bar icon to open a quick menu where you can set your exact polling interval or toggle advanced overrides.
+- **Pull Now ( Ctrl + Alt + Shift + P ):** Click the `Pull Now` status bar icon to force an immediate sync with the remote repository. Resets the interval timer so you never get overlapping pulls.
+- **Smart Local Protection:** If you experiment and change code locally, the agent won't blindly overwrite your work. It detects local changes and prompts you to either protect your work or overwrite it with the instructor's latest state.
+- **Force Overwrite (Override Local):** Need the extension to act strictly as a read-only mirror? Toggle the Override Local setting ON from the status bar menu. The agent will aggressively update your workspace and visually warn you with an orange `Pull Now` icon.
+- **Editor Agnostic:** All settings are saved securely in your repository's `.git/config` file, meaning the extension works perfectly without polluting your workspace `.vscode` settings.
 
-- *Pull Now* **( Ctrl + Alt + Shift + P )** | *use status bar icon `Pull Now`*
-  Forces an immediate sync with the remote repository. Resets the interval timer so you never get overlapping pulls.
+## ⚙️ Configuration & Usage
 
-- *Smart Local Protection*
-  If you experiment and change code locally, the agent won't blindly overwrite your work. It detects local changes and prompts you to either protect your work or overwrite it with the instructor's latest state.
+Git Pull Agent configures itself directly per-repository.
 
-- *Status bar icons*
-  Visual shortcuts for all actions — you instantly know if the agent is actively listening for updates.
-
-## ⚙️ Configuration
-
-### Extension settings [ ctrl + , ] / gitPullAgent
-
-- `gitPullAgent.intervalEnabled`: Enable or disable auto-pulling on interval. [default: false]
-- `gitPullAgent.intervalMs`: Polling interval in milliseconds (minimum 1000ms). [default: 5000]
-- `gitPullAgent.overrideLocal`: If true, forcefully overwrites any local changes you make without asking. If false, prompts you to overwrite or skip. [default: false]
-
-## 🚀 Usage
-
-1. Open the cloned workshop folder in VS Code.
-2. Look at the bottom left of your VS Code Status Bar.
-3. Click **`auto-pull: OFF`** to turn the agent **ON**. The icon will turn green.
-4. If you need to force an update instantly, click **`Pull Now`** icon.
+1. Open a cloned Git repository in your editor.
+2. Look at the bottom left of your Status Bar.
+3. Click **`auto-pull: OFF`** to open the Quick Pick settings menu.
+4. Select your desired polling interval (e.g., `5 seconds`, `10 seconds`, etc.). The icon will turn green to indicate it is actively listening.
+5. If you want the agent to forcefully overwrite local changes without asking, select **`Force Pull (Override local) - ON`** from the same menu.
+6. If you need to force an update instantly, click the **`Pull Now`** icon.
 
 ## 🛡️ Smart Protection & Conflicts
 
 During a workshop, you might want to type along or test a piece of code yourself. If the instructor pushes an update while you have uncommitted changes in your editor, a standard `git pull` would normally crash or create messy merge conflicts.
 
 Git Pull Agent handles this gracefully:
-- If `overrideLocal` is **false** (Default): You will get a friendly warning asking if you want to **Overwrite Local** (discarding your experiments to catch up with the instructor) or **Skip** (keeping your changes, but pausing the updates).
-- If `overrideLocal` is **true**: The agent assumes the instructor's code is the absolute source of truth and will automatically reset your local folder to perfectly match the remote branch.
-
-> ### ⚠️ Important Setup Tip for Instructors
-> Because Git Pull Agent saves its "ON/OFF" toggle state directly to the VS Code workspace configuration, it automatically modifies the `.vscode/settings.json` file.
->
-> If the `.vscode` folder is tracked by Git, the moment a student turns the agent ON, Git will see it as a "local change," and the Smart Protection feature will block the auto-pull!
->
-> **How to fix:** Always ensure you add `.vscode*/` to your workshop repository's `.gitignore` file before the session begins.
+- If Override Local is **OFF** (Default): You will get a friendly warning asking if you want to **Overwrite Local** (discarding your experiments to catch up with the instructor) or **Skip** (keeping your changes, but pausing the updates).
+- If Override Local is **ON**: The agent assumes the instructor's code is the absolute source of truth and will automatically reset your local folder to perfectly match the remote branch.
 
 ## 🛠️ Troubleshoot
 
@@ -137,7 +132,7 @@ Git Pull Agent handles this gracefully:
 
 ## ☑️ Requirements
 
-- VS Code v1.85.0 or higher.
+- VS Code v1.85.0 or higher (or compatible editors like Cursor, Windsurf, Antigravity).
 - Git installed on your system.
 
 ## ⚖️ License
